@@ -80,6 +80,7 @@ body {
 
     background-color: #fafafa;
     border-radius: 10px;
+    border: 1px solid #1111111A;
 }
 
 .main-field.textarea {
@@ -145,4 +146,16 @@ input::placeholder, textarea::placeholder {
     background-color: rgba(255, 255, 255, 0.75);
     border-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.35);
+}
+
+.main-field:has(.ng-invalid.ng-touched) {
+    border-color: red;
+}
+
+.input-error {
+    margin-top: 1px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: red;
 }
